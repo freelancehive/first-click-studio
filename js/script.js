@@ -16,6 +16,7 @@ function gotowhatsapp() {
 
   window.open(url, '_blank').focus();
 }
+
 (function($) {
 
   "use strict";
