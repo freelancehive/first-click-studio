@@ -1,1 +1,1 @@
-# first-click-studio
+# First-Click-Studios

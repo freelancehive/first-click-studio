@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="slider" id="slider3">
+    <div style="background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/jungle.jpg)">
+        <span>
+            <h2>I'm a title for Slide #1</h2>
+        </span>
+    </div>
+    <div style="background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1200_110627-8240-Myst.jpg)">
+        <span>
+            <h2>I'm a title for Slide #2</h2>
+        </span>
+    </div>
+    <div style="background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1200_bodie-11.jpg)">
+        <span>
+            <h2>I'm a title for Slide #3</h2>
+        </span>
+    </div>
+    <!-- The Arrows -->
+    <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+            <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+        </svg></i>
+    <i class="right" class="arrows" style="z-index:2; position:absolute;">
+        <svg viewBox="0 0 100 100">
+            <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path>
+        </svg></i>
+    <!-- Title Bar -->
+    <!--     <span class="titleBar">
+    <h1>I am like a leaf in the wind.</h1> 
+    <p>Watch me soar!</p>
+</span> -->
+</div>
+    <video id="my-video" class="video-js" controls preload="auto" poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" data-setup='' loop>
+      <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type='video/mp4'>
+      </video>
+
+    <div class="gallery-row">
+        
+        <div class="content col-md-4 pb-4 Modeling">
+            <figure class="img-wrapper">
+                <a href="/blog" >
+                  <img class="inner-img" src="\images\gallery\7.jpg" alt="" />
+                  <div class="hover-text">Hover Text</div>
+                </a>
+              </figure>
+        </div><!--content-->
+        <div class="content col-md-4 pb-4 Modeling">
+            <figure class="img-wrapper">
+                <a href="/blog" >
+                  <img class="inner-img" src="\images\gallery\8.jpg" alt="" />
+                  <div class="hover-text">Hover Text</div>
+                </a>
+              </figure>
+        </div><!--content-->
+        <div class="content col-md-4 pb-4 Wedding-photography">
+            <figure class="img-wrapper">
+                <a href="/blog" >
+                  <img class="inner-img" src="\images\gallery\9.jpg" alt="" />
+                  <div class="hover-text">Hover Text</div>
+                </a>
+              </figure>
+        </div><!--content-->
+    </div>
+</body>
+</html>
