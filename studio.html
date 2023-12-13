@@ -20,7 +20,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <style>
+        .justified-text {
+    	text-align: justify;
+    	text-justify: inter-character;
+	}
 
+    .about-us-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px 10px;
+        }
+
+        .about-us-image {
+            flex: 1;
+            padding: 10px;
+          
+        }
+
+        .about-us-text {
+            flex: 1;
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Add additional CSS styles as needed for your specific design */
+
+        /* Media Query for smaller screens */
+        @media (max-width: 768px) {
+            .about-us-container {
+                flex-direction: column;
+            }
+
+            .about-us-text {
+                text-align: left;
+            }
+        }
+    </style>
 </head>
 <body>
     
@@ -56,15 +93,30 @@
     
         <!-- Add the rest of your website content here -->
     </div>
+    <div class="">
+        <div class="about-us-container d-flex">
+           
+            <div class="about-us-text text-center ">
+                <h2 >Our Studio</h2>
+                <p class="justified-text" style="width:90%; margin-left: auto; margin-right: auto;"  >
+                    Welcome to First Click Studios, your premier destination for creating lasting memories through indoor studio photography. Our dedicated team specializes in capturing the essence of your special moments with creativity and attention to detail. From traditional portraits to candid highlights, we tailor our services to uniquely showcase your indoor celebrations. Let us tell your story in the most captivating way.
+                </p>
+            </div>
+            <div class="about-us-image d-flex justify-content-center align-items-center">
+                <img src="images/studio2.jpg" alt="About Us Image"  class="rounded-lg">
+            </div>
+        </div>
+    </div>
+    
 
     <div class="gallery">
         <div class="section-header text-center">
-			<h2 class="section-title text-uppercase py-4">~ Gallery ~</h2>
+			<h2 class="section-title text-uppercase py-4">~ Our Studio ~</h2>
 		</div>
         <div class="gallery__column">
             <a class="image-link js-scroll  m-2" rel="gallery" href="images/model1.jpg">
                 <img src="images/model1.jpg" alt="model" class="portoImg">
-               
+                
             </a>
             <a class="image-link js-scroll  m-2" rel="gallery" href="images/model1.jpg">
                 <img src="images/model1.jpg" alt="model" class="portoImg">
@@ -79,7 +131,7 @@
         <div class="gallery__column">
             <a class="image-link js-scroll  m-2" rel="gallery" href="images/model2.jpg">
                 <img src="images/model2.jpg" alt="model" class="portoImg">
-               
+                
             </a>
 
             <a class="image-link js-scroll  m-2" rel="gallery" href="images/model2.jpg">
@@ -88,7 +140,7 @@
             </a>
             <a class="image-link js-scroll  m-2" rel="gallery" href="images/model2.jpg">
                 <img src="images/model2.jpg" alt="model" class="portoImg">
-                
+               
             </a>
            
         </div>
@@ -151,7 +203,7 @@
 	</footer>
 
 
-    <div class="footer-bottom bg-black">
+    <div class="footer-bottom bg-mine-shaft">
 		<div class="container">
 			<div class="padding-xsmall text-center">
 				<div class="copyright color-secondary">

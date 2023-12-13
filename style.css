@@ -7347,8 +7347,8 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 
 .gallery {
-  display: flex;
-  padding: 2px;
+  /* display: flex; */
+  padding: 12px;
   transition: 0.3s;
 }
 .gallery:hover .gallery__image {
@@ -7356,8 +7356,8 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 .gallery__column {
   display: flex;
-  flex-direction: column;
-  width: 25%;
+  /* flex-direction: column; */
+  /* width: 25%; */
 }
 .gallery__link {
   margin: 2px;
