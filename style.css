@@ -6629,7 +6629,6 @@ tfoot {
   left: auto;
   width: 100%;
   z-index: 9;
-
   background: rgb(0, 0, 0, 0.9);
   padding: 0;
 }
@@ -6659,7 +6658,7 @@ tfoot {
   border-bottom: 1px solid #03b4e8;
   color: #03b4e8;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 990px) {
   .navbar button.navbar-toggler {
     position: absolute;
     top: 0;
