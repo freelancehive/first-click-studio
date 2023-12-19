@@ -39,47 +39,271 @@
         .text-uppercase {
             letter-spacing: 0.2em;
         }
+
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            padding: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        /* Main CSS */
+        .grid-wrapper>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-wrapper>div>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .grid-wrapper {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-auto-rows: 200px;
+            grid-auto-flow: dense;
+        }
+
+        .grid-wrapper .wide {
+            grid-column: span 2;
+        }
+
+        .grid-wrapper .tall {
+            grid-row: span 2;
+        }
+
+        .grid-wrapper .big {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
     </style>
 
 </head>
 
 <body>
+
+    <div class="grid-wrapper">
+        <div class="tall">
+            <img src="https://images.unsplash.com/photo-1541845157-a6d2d100c931?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
+                alt="" />
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1588282322673-c31965a75c3e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80"
+                alt="" />
+        </div>
+        <div class="">
+            <img src="https://images.unsplash.com/photo-1588117472013-59bb13edafec?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                alt="">
+        </div>
+        <div class="wide">
+            <img src="https://images.unsplash.com/photo-1587588354456-ae376af71a25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                alt="" />
+        </div>
+        <div>
+            <img src=" https://images.unsplash.com/photo-1558980663-3685c1d673c4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=60"
+                alt="" />
+        </div>
+        <div class="">
+            <img src="https://images.unsplash.com/photo-1588499756884-d72584d84df5?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2134&amp;q=80"
+                alt="" />
+        </div>
+        <div class="big">
+            <img src="https://images.unsplash.com/photo-1588492885706-b8917f06df77?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80"
+                alt="" />
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1588247866001-68fa8c438dd7?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=564&amp;q=80"
+                alt="" />
+        </div>
+        <div class="wide">
+            <img src="https://images.unsplash.com/photo-1586521995568-39abaa0c2311?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
+                alt="" />
+        </div>
+        <div class="big">
+            <img src="https://images.unsplash.com/photo-1572914857229-37bf6ee8101c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80"
+                alt="" />
+        </div>
+        <div class="tall">
+            <img src="https://images.unsplash.com/photo-1588453862014-cd1a9ad06a12?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80"
+                alt="" />
+        </div>
+    </div>
+
+
+
     <section>
-        <div class="container py-5">
+        <div class="py-5">
 
             <!-- FOR DEMO PURPOSE -->
 
             <div class="row text-center align-items-end">
                 <!-- Pricing Table-->
-                <div class="col-md-4 mb-5 mb-lg-0">
+                <div class="col-md-3 mb-5 mb-lg-0">
                     <div class="bg-white p-5 rounded-lg shadow">
-                        <h1 class="h6 text-uppercase font-weight-bold mb-4">Basic</h1>
-                        <h2 class="h1 font-weight-bold">$199<span class="text-small font-weight-normal ml-2">/
-                                month</span></h2>
+                        <h1 class="h6 text-uppercase font-weight-bold mb-4">ECONOMY PACK I</h1>
+                        <h2 class="h1 font-weight-bold">₹50,000</h2>
 
                         <div class="custom-separator my-4 mx-auto bg-primary"></div>
 
                         <ul class="list-unstyled my-5 text-small text-left">
                             <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Lorem ipsum dolor sit amet
+                                <i class="fa fa-check mr-2 text-primary"></i>Traditional Photographer 1
                             </li>
                             <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
+                                <i class="fa fa-check mr-2 text-primary"></i>Traditional Videographer 1
                             </li>
                             <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                                <i class="fa fa-check mr-2 text-primary"></i>Unlimited Softcopies
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Selected Photos 250
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>35 Sheets 12x36 Album: 1
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i><span class="w-25">Video Output: Edited
+                                    Traditional Video on Pen drive</span>
                             </li>
                             <li class="mb-3 text-muted">
                                 <i class="fa fa-times mr-2"></i>
-                                <del>Nam libero tempore</del>
+                                <del>Candid Photographer 1</del>
                             </li>
                             <li class="mb-3 text-muted">
                                 <i class="fa fa-times mr-2"></i>
-                                <del>Sed ut perspiciatis</del>
+                                <del>Candid Videographer 1</del>
                             </li>
                             <li class="mb-3 text-muted">
                                 <i class="fa fa-times mr-2"></i>
-                                <del>Sed ut perspiciatis</del>
+                                <del>Couple Portrait frame: 1</del>
+                            </li>
+                            <li class="mb-3 text-muted">
+                                <i class="fa fa-times mr-2"></i>
+                                <del>Pre wed Photoshoot (3-4hrs)</del>
+                            </li>
+
+                            <li class="mb-3 text-muted">
+                                <i class="fa fa-times mr-2"></i>
+                                <del>Family Portrait frame: 1 </del>
+                            </li>
+                            <li class="mb-3 text-muted">
+                                <i class="fa fa-times mr-2"></i>
+                                <del>Drone 1, LED Screen 8x6 1</del>
+                            </li>
+                            <li class="mb-3 text-muted">
+                                <i class="fa fa-times mr-2"></i>
+                                <del>Post wed Photoshoot</del>
+                            </li>
+                            <li class="mb-3 text-muted">
+                                <i class="fa fa-times mr-2"></i>
+                                <del>Save the Teaser</del>
+                            </li>
+                            <li class="mb-3 w-100 h-100">
+
+                            </li>
+                            <li class="mb-3 w-100 h-100">
+
+                            </li>
+                            <li class="mb-3 w-100 h-100">
+
+                            </li>
+                            <li class="mb-3 w-100 h-100">
+
+                            </li>
+                            <li class="mb-3 w-100 h-100">
+
+                            </li>
+                            <li class="mb-3 w-100 h-100">
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END -->
+
+                <!-- Pricing Table-->
+                <div class="col-md-3 mb-5 mb-lg-0">
+                    <div class="bg-white p-5 rounded-lg shadow">
+                        <h1 class="h6 text-uppercase font-weight-bold mb-4">STANDARD PACK II</h1>
+                        <h2 class="h1 font-weight-bold">₹80,000</h2>
+
+                        <div class="custom-separator my-4 mx-auto bg-primary"></div>
+
+                        <ul class="list-unstyled my-5 text-small text-left">
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Traditional Photographer 1
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Traditional Videographer 1
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Candid Photographer 1
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Unlimited Softcopies
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Selected Photos 400
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>35 Sheets Synthetic Album 12x36:2
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i><span class="w-25">Video Output: Wedding HD
+                                    Edited Video on Pen drive</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Couple Portrait frame: 1
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Family Portrait frame: 1
+                            </li>
+                            <li class="mb-3 text-muted">
+                                <i class="fa fa-times mr-2"></i>
+                                <del>Pre wed Photoshoot (3-4hrs)</del>
+                            </li>
+                            <li class="mb-3 text-muted">
+                                <i class="fa fa-times mr-2"></i>
+                                <del>Candid Videographer 1</del>
+                            </li>
+                            <li class="mb-3 text-muted">
+                                <i class="fa fa-times mr-2"></i>
+                                <del>Family Portrait frame: 1 </del>
+                            </li>
+                            <li class="mb-3 text-muted">
+                                <i class="fa fa-times mr-2"></i>
+                                <del>Drone 1, LED Screen 8x6 1</del>
+                            </li>
+                            <li class="mb-3 text-muted">
+                                <i class="fa fa-times mr-2"></i>
+                                <del>Post wed Photoshoot</del>
+                            </li>
+                            <li class="mb-3 text-muted">
+                                <i class="fa fa-times mr-2"></i>
+                                <del>Save the Teaser</del>
+                            </li>
+                            <li class="mb-3 w-100 h-100">
+
+                            </li>
+                            <li class="mb-3 w-100 h-100">
+
                             </li>
                         </ul>
                     </div>
@@ -88,237 +312,140 @@
 
 
                 <!-- Pricing Table-->
-                <div class="col-md-4 mb-5 mb-lg-0">
+                <div class="col-md-3  mb-5 mb-lg-0">
                     <div class="bg-white p-5 rounded-lg shadow">
-                        <h1 class="h6 text-uppercase font-weight-bold mb-4">Pro</h1>
-                        <h2 class="h1 font-weight-bold">$399<span class="text-small font-weight-normal ml-2">/
-                                month</span></h2>
+                        <h1 class="h6 text-uppercase font-weight-bold mb-4">STANDARD PRO III</h1>
+                        <h2 class="h1 font-weight-bold">₹1,25,000</h2>
 
                         <div class="custom-separator my-4 mx-auto bg-primary"></div>
 
-                        <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
+                        <ul class="list-unstyled my-5 text-small text-left">
                             <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Lorem ipsum dolor sit amet
+                                <i class="fa fa-check mr-2 text-primary"></i>Traditional Photographer 1
                             </li>
                             <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
+                                <i class="fa fa-check mr-2 text-primary"></i>Traditional Videographer 1
                             </li>
                             <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                                <i class="fa fa-check mr-2 text-primary"></i>Candid Photographer 1
                             </li>
                             <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Nam libero tempore
+                                <i class="fa fa-check mr-2 text-primary"></i>Candid Videographer 1
                             </li>
                             <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
+                                <i class="fa fa-check mr-2 text-primary"></i>Pre wed Photoshoot (3-4hrs)
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Unlimited Softcopies
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Selected Photos 400
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>40 Sheets Synthetic Album with Combo Box
+                                12x36: 2
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i><span class="w-25">Video Output: Candid
+                                    Wedding Film (5-7mins), Edited HD Video on Pen drive: 1, Hd Dvd Box: 1</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Couple Portrait frame: 2,
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Family Portrait frame: 1
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Couple Calendar: 1
                             </li>
                             <li class="mb-3 text-muted">
                                 <i class="fa fa-times mr-2"></i>
-                                <del>Sed ut perspiciatis</del>
+                                <del>Drone 1, LED Screen 8x6 1</del>
+                            </li>
+                            <li class="mb-3 text-muted">
+                                <i class="fa fa-times mr-2"></i>
+                                <del>Post wed Photoshoot</del>
+                            </li>
+                            <li class="mb-3 text-muted">
+                                <i class="fa fa-times mr-2"></i>
+                                <del>Save the Teaser</del>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <!-- END -->
 
-
                 <!-- Pricing Table-->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="bg-white p-5 rounded-lg shadow">
-                        <h1 class="h6 text-uppercase font-weight-bold mb-4">Enterprise</h1>
-                        <h2 class="h1 font-weight-bold">$899<span class="text-small font-weight-normal ml-2">/
-                                month</span></h2>
+                        <h1 class="h6 text-uppercase font-weight-bold mb-4">PREMIUM IV</h1>
+                        <h2 class="h1 font-weight-bold">₹1,75,000</h2>
 
                         <div class="custom-separator my-4 mx-auto bg-primary"></div>
 
-                        <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
+                        <ul class="list-unstyled my-5 text-small text-left">
                             <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Lorem ipsum dolor sit amet
+                                <i class="fa fa-check mr-2 text-primary"></i>Traditional Photographer 1
                             </li>
                             <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
+                                <i class="fa fa-check mr-2 text-primary"></i>Traditional Videographer 2
                             </li>
                             <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                                <i class="fa fa-check mr-2 text-primary"></i>Candid Photographer 1
                             </li>
                             <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Nam libero tempore
+                                <i class="fa fa-check mr-2 text-primary"></i>Candid Videographer 2
                             </li>
                             <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
+                                <i class="fa fa-check mr-2 text-primary"></i>Pre/Post wed Photoshoot (3-4hrs)
                             </li>
                             <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
+                                <i class="fa fa-check mr-2 text-primary"></i>Drone 1, LED Screen 8x6 1
                             </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Save the Teaser
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Unlimited Softcopies
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Selected Photos 500
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>50 Sheets Synthetic Album with Combo Box
+                                12x36: 2
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i><span class="w-25">Video Output: Candid
+                                    Wedding Film (5-7mins), Edited HD Video on Pen drive: 1, Hd Dvd Box: 1</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Couple Portrait frame: 2,
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Family Portrait frame: 1
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-check mr-2 text-primary"></i>Couple Calendar: 1
+                            </li>
+                            <li class="mb-3 w-100 h-100">
+
+                            </li>
+                            <li class="mb-3 w-100 h-100">
+
+                            </li>
+
                         </ul>
                     </div>
                 </div>
                 <!-- END -->
-                <!-- Pricing Table-->
-                <div class="col-md-4">
-                    <div class="bg-white p-5 rounded-lg shadow">
-                        <h1 class="h6 text-uppercase font-weight-bold mb-4">Enterprise</h1>
-                        <h2 class="h1 font-weight-bold">$899<span class="text-small font-weight-normal ml-2">/
-                                month</span></h2>
 
-                        <div class="custom-separator my-4 mx-auto bg-primary"></div>
-
-                        <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
-                            <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Lorem ipsum dolor sit amet
-                            </li>
-                            <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
-                            </li>
-                            <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
-                            </li>
-                            <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Nam libero tempore
-                            </li>
-                            <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
-                            </li>
-                            <li class="mb-3">
-                                <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- END -->
 
             </div>
         </div>
     </section>
 
-    <section id="pricing" class="bg-white">
-	<div class="container">
-		<h2 class="text-center">WEDDING PHOTOGRAPHY PACKAGES</h2>
-		<div class="spacer spacer-line border-primary">&nbsp;</div>
-		<div class="spacer">&nbsp;</div>
-		<div class="row">
-			<div class="col-md-3">
-				<div class="pricing-table">
-					<div class="pricing-table-title">
-						<h5 class="pricing-title bg-info-hover text-white">ECONOMY PACK I</h5>
-					</div>
-					<div class="pricing-table-price text-center bg-info">
-						<p class="title-font">
-							<span class="pricing-currency text-white">₹</span>
-							<span class="pricing-price text-white">50,000</span>
-						</p>
-					</div>
-					<div class="pricing-table-content">
-						<ul>
-							<li>Traditional Photographer 1</li>
-							<li>Traditional Videographer 1</li>
-							<li>Unlimited Softcopies</li>
-							<li>Selected Photos 250</li>
-							<li>35 Sheets 12x36 Album: 1</li>
-							<li>Video Output: Edited Traditional Video on Pen drive</li>
-						</ul>
-						<div class="pricing-table-button">
-							<a href="mailto:firstclickstudios@gmail.com" class="btn btn-info"><span>Contact Us</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
 
-			<div class="col-md-3">
-				<div class="pricing-table bg-lightgrey">
-					<div class="pricing-table-title">
-						<h5 class="pricing-title bg-primary-hover text-white">STANDARD PACK II</h5>
-					</div>
-					<div class="pricing-table-price text-center bg-primary">
-						<p class="title-font">
-							<span class="pricing-currency text-white">₹</span>
-							<span class="pricing-price text-white">80,000</span>
-						</p>
-					</div>
-					<div class="pricing-table-content">
-						<ul>
-							<li>Traditional Photographer 1</li>
-							<li>Traditional Videographer 1</li>
-							<li>Candid Photographer 1</li>
-							<li>Unlimited Softcopies</li>
-							<li>Selected Photos 400</li>
-							<li>35 Sheets Synthetic Album 12x36: 2</li>
-							<li>Video Output: Wedding HD Edited Video on Pen drive</li>
-							<li>Couple Portrait frame: 1, Family Portrait frame: 1 (Complimentary)</li>
-						</ul>
-						<div class="pricing-table-button">
-							<a href="mailto:firstclickstudios@gmail.com" class="btn btn-primary"><span>Contact Us</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		
-			<div class="col-md-3">
-				<div class="pricing-table">
-					<div class="pricing-table-title">
-						<h5 class="pricing-title bg-info-hover text-white">STANDARD PRO III</h5>
-					</div>
-					<div class="pricing-table-price text-center bg-info">
-						<p class="title-font">
-							<span class="pricing-currency text-white">₹</span>
-							<span class="pricing-price text-white">1,25,000</span>
-						</p>
-					</div>
-					<div class="pricing-table-content">
-						<ul>
-							<li>Traditional Photographer 1</li>
-							<li>Traditional Videographer 1</li>
-							<li>Candid Photographer 1</li>
-							<li>Candid Videographer 1</li>
-							<li>Pre wed Photoshoot (3-4hrs)</li>
-							<li>Unlimited Softcopies</li>
-							<li>Selected Photos 400</li>
-							<li>40 Sheets Synthetic Album with Combo Box 12x36: 2</li>
-							<li>Video Output: Candid Wedding Film (5-7mins), Edited HD Video on Pen drive: 1, Hd Dvd Box: 1</li>
-							<li>Couple Portrait frame: 2, Family Portrait frame: 1, Couple Calendar: 1 (Complimentary)</li>
-						</ul>
-						<div class="pricing-table-button">
-							<a href="mailto:firstclickstudios@gmail.com" class="btn btn-info"><span>Contact Us</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-3">
-				<div class="pricing-table">
-					<div class="pricing-table-title">
-						<h5 class="pricing-title bg-info-hover text-white">PREMIUM IV</h5>
-					</div>
-					<div class="pricing-table-price text-center bg-info">
-						<p class="title-font">
-							<span class="pricing-currency text-white">₹</span>
-							<span class="pricing-price text-white">1,75,000</span>
-						</p>
-					</div>
-					<div class="pricing-table-content">
-						<ul>
-							<li>Traditional Photographer 1</li>
-							<li>Traditional Videographer 2</li>
-							<li>Candid Photographer 1</li>
-							<li>Candid Videographer 2</li>
-							<li>Drone 1, LED Screen 8x6 1</li>
-							<li>Pre/Post wed Photoshoot</li>
-							<li>Save the Teaser</li>
-							<li>Unlimited Softcopies</li>
-							<li>Selected Photos 500</li>
-							<li>50 Sheets Synthetic Album with Combo Box 12x36: 2</li>
-							<li>Video Output: Candid Wedding Film (5-7mins), Edited HD Video on Pen drive: 1, Hd Dvd Box: 1</li>
-							<li>Couple Portrait frame: 2, Family Portrait frame: 1, Couple Calendar: 1 (Complimentary)</li>
-						</ul>
-						<div class="pricing-table-button">
-							<a href="mailto:firstclickstudios@gmail.com" class="btn btn-info"><span>Contact Us</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
 
 
