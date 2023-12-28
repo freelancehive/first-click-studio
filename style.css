@@ -5807,8 +5807,8 @@ tfoot {
   padding-bottom: 1.5em;
 }
 .padding-small {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 .padding-medium {
   padding-top: 4.5em;
@@ -6613,10 +6613,10 @@ tfoot {
   position: absolute;
   left: 0;
   z-index: 30;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   width: 100%;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   transition: top 0.3s ease-out;
 }
 #header.fixed {
@@ -6645,7 +6645,7 @@ tfoot {
   color: #fff;
 }
 .navbar #slide-navbar-collapse {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .navbar-collapse .sf-menu {
   margin-bottom: 0;
@@ -7911,3 +7911,8 @@ ul {
 .text-white {
 	color: #fff !important;
 }
+
+.inputContainer input,
+    .inputContainer textarea {
+        border-radius: 10px; /* Adjust the radius as needed */
+    }

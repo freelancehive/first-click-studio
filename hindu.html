@@ -76,7 +76,7 @@
 <body>
 
 	<header id="header">
-		<div class="container">
+		<div class="container" style=" margin-left: 0; margin-right: 0; max-width:100%">
 			<div class="row">
 				<nav class="navbar navbar-expand-lg col-md-12 padding-small flex-container">
 					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
@@ -84,14 +84,20 @@
 						aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"><i class="icon icon-navicon"></i></span>
 					</button>
-					<div class="navbar-collapse collapse" id="slide-navbar-collapse">
+					<div class="navbar-collapse collapse" id="slide-navbar-collapse" style="padding-left: 55px;padding-right: 55px;">
 						<ul class="navbar-nav list-inline light text-uppercase align-items-baseline">
+							<li class="nav-item nav-brand">
+								<a href="index.html"><img loading="lazy" src="images/logo/logo.png" alt="logo" style="width: 150px;" /></a>
+							</li>
+						</ul>
+						<ul class="navbar-nav list-inline light text-uppercase align-items-baseline" style="margin-top: 15px;">
+							<!-- <li class="nav-item nav-brand">
+								<a href="index.html"><img loading="lazy" src="images/logo/logo.png" alt="logo" /></a>
+							</li> -->
 							<li class="nav-item active"><a href="index.html" class="navlink">Home</a></li>
 							<li class="nav-item"><a href="about.html">About us</a></li>
 							<li class="nav-item"><a href="price.html">Pricing</a></li>
-							<li class="nav-item nav-brand">
-								<a href="index.html"><img src="images/logo/logo.png" alt="logo" /></a>
-							</li>
+							
 							<li class="nav-item"><a href="studio.html">Studio</a></li>
 							<li class="nav-item"><a href="gallery.html">Gallery</a></li>
 							<li class="nav-item"><a href="contact.html">Contact us</a></li>

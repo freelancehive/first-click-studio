@@ -45,7 +45,7 @@
 <body>
 
 	<header id="header">
-		<div class="container">
+		<div class="container" style=" margin-left: 0; margin-right: 0; max-width:100%">
 			<div class="row">
 				<nav class="navbar navbar-expand-lg col-md-12 padding-small flex-container">
 					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
@@ -53,14 +53,20 @@
 						aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"><i class="icon icon-navicon"></i></span>
 					</button>
-					<div class="navbar-collapse collapse" id="slide-navbar-collapse">
+					<div class="navbar-collapse collapse" id="slide-navbar-collapse" style="padding-left: 55px;padding-right: 55px;">
 						<ul class="navbar-nav list-inline light text-uppercase align-items-baseline">
+							<li class="nav-item nav-brand">
+								<a href="index.html"><img loading="lazy" src="images/logo/logo.png" alt="logo" style="width: 150px;" /></a>
+							</li>
+						</ul>
+						<ul class="navbar-nav list-inline light text-uppercase align-items-baseline" style="margin-top: 15px;">
+							<!-- <li class="nav-item nav-brand">
+								<a href="index.html"><img loading="lazy" src="images/logo/logo.png" alt="logo" /></a>
+							</li> -->
 							<li class="nav-item active"><a href="index.html" class="navlink">Home</a></li>
 							<li class="nav-item"><a href="about.html">About us</a></li>
 							<li class="nav-item"><a href="price.html">Pricing</a></li>
-							<li class="nav-item nav-brand">
-								<a href="index.html"><img loading="lazy" src="images/logo/logo.png" alt="logo" /></a>
-							</li>
+							
 							<li class="nav-item"><a href="studio.html">Studio</a></li>
 							<li class="nav-item"><a href="gallery.html">Gallery</a></li>
 							<li class="nav-item"><a href="contact.html">Contact us</a></li>
@@ -89,7 +95,7 @@
 				<div class="row">
 					<div class="text-content text-center col-md-8">
 						<div class="section-header">
-							<h2 class="section-title pb-4 text-uppercase">We Capture Your Special Moments</h2>
+							<h2 class="section-title pb-4 text-uppercase">Capturing moments creating memories</h2>
 
 							<p>Our photography is all about capturing the genuine connections and heartfelt emotions
 								that define your special day. We delve deep into the love you share, the joy of having
@@ -101,56 +107,96 @@
 								collaborative journey, your insights shape eternal love-filled photos.</p>
 						</div>
 
-						<figure>
+						<!-- <figure>
 							<img loading="lazy" src="images/logo/dark-logo.png" alt="logo">
-						</figure>
+						</figure> -->
 					</div><!--content-->
 				</div>
 			</div>
 		</section>
 
-		<section id="portfolios" class="portfolios fancyboxeffect mb-6">
-			<div class="container">
-				<div class="row">
-					<div class="section-header text-center">
-						<h2 class="section-title pb-4 text-uppercase">~ Portfolios ~</h2>
-					</div>
-					<div class="portfolios-content d-flex flex-wrap">
-						<div class="content col-md-4 mb-3">
-							<a class="image-link js-scroll down-enter" rel="gallery" href="images/model1.webp">
-								<img loading="lazy" src="images/model1.webp" alt="model" class="portoImg">
-								<div class="overlay-content text-center light">
-									<h3 class="title">Portraits</h3>
-									<span>View More</span>
-								</div>
-							</a>
-						</div><!--content-->
+	
 
-						<div class="content col-md-4 mb-3">
-							<a class="image-link js-scroll down-enter" rel="gallery" href="images/model2.webp">
-								<img loading="lazy" src="images/model2.webp" alt="model" class="portoImg">
-								<div class="overlay-content text-center light">
-									<h3 class="title">Wedding</h3>
-									<span>View More</span>
-								</div>
-							</a>
-						</div><!--content-->
-
-						<div class="content col-md-4">
-							<a class="image-link js-scroll down-enter" rel="gallery" href="images/model3.webp">
-								<img loading="lazy" src="images/model3.webp" alt="model" class="portoImg">
-								<div class="overlay-content text-center light">
-									<h3 class="title">Baby Portraits</h3>
-									<span>View More</span>
-								</div>
-							</a>
-						</div><!--content-->
-					</div>
-				</div>
-				<div class="pix_btn text-center">
-					<button class="btn-hvr-effects5 mt-5"><span>View Portfolio</span></button>
-				</div>
+		<section id="gallery" class="gallery-wrap padding-medium">
+			<div class="section-header text-center">
+				<h2 class="section-title text-uppercase pb-4">~ Gallery ~</h2>
 			</div>
+			<div align="center">
+				<button class="btn btn-default filter-button" data-filter="all">All</button>
+				<button class="btn btn-default filter-button" data-filter="Wedding-photography">Wedding
+					Photoshoot</button>
+				<button class="btn btn-default filter-button" data-filter="Baby-Photoshoot">Baby Photoshoot</button>
+				<button class="btn btn-default filter-button" data-filter="Maternity">Maternity</button>
+				<button class="btn btn-default filter-button" data-filter="Prewed-Photoshoot">Pre-wedding
+					Photoshoot</button>
+			</div>
+
+			<div class="gallery-content">
+
+				
+				<div class="content col-md-4  pb-xs-2 Wedding-photography">
+					<figure class="img-wrapper">
+						<a href="hindu.html">
+							<img loading="lazy" class="inner-img" src="\images\gallery\hindu.webp" alt="Wedding Photography" width="307" height="204" />
+							<div class="hover-text">Hindu wedding</div>
+						</a>
+					</figure>
+				</div><!--content-->
+				<div class="content col-md-4  pb-xs-2 Wedding-photography">
+					<figure class="img-wrapper">
+						<a href="christian.html">
+							<img loading="lazy" class="inner-img" src="\images\gallery\christian.webp" alt="Wedding Photography" />
+							<div class="hover-text">Christian wedding</div>
+						</a>
+					</figure>
+				</div><!--content-->
+				<div class="content col-md-4  pb-xs-2 Prewed-Photoshoot">
+					<figure class="img-wrapper">
+						<a href="prewed.html">
+							<img loading="lazy" class="inner-img" src="\images\gallery\prewed.webp" alt="Wedding Photography" />
+							<div class="hover-text">Pre Wedding</div>
+						</a>
+					</figure>
+				</div><!--content-->
+				<div class="content col-md-4  pb-xs-2 Wedding-photography">
+					<figure class="img-wrapper">
+						<a href="bride.html">
+							<img loading="lazy" class="inner-img" src="\images\gallery\bride.webp" alt="Wedding Photography" />
+							<div class="hover-text">Bride</div>
+						</a>
+					</figure>
+				</div><!--content-->
+				<div class="content col-md-4  pb-xs-2 Maternity">
+					<figure class="img-wrapper">
+						<a href="Maternity.html">
+							<img loading="lazy" class="inner-img" src="\images\gallery\maternity.webp" alt="Maternity Photoshoot" />
+							<div class="hover-text">Maternity</div>
+						</a>
+					</figure>
+				</div><!--content-->
+				<div class="content col-md-4  pb-xs-2 Baby-Photoshoot">
+					<figure class="img-wrapper">
+						<a href="baby.html">
+							<img loading="lazy" class="inner-img" src="\images\gallery\baby.webp" alt="Baby Photoshoot" />
+							<div class="hover-text">Baby Photoshoot</div>
+						</a>
+					</figure>
+				</div><!--content-->
+				<div class="content col-md-4  pb-xs-2 Wedding-photography">
+					<figure class="img-wrapper">
+						<a href="reception.html">
+							<img loading="lazy" class="inner-img" src="\images\gallery\reception.webp" alt="Wedding Photography" />
+							<div class="hover-text">Reception</div>
+						</a>
+					</figure>
+				</div><!--content-->
+			</div><!--gallery-content-->
+			<div class="pix_btn text-center mt-5">
+				<a href="gallery.html"> <!-- Replace "your-target-page.html" with the actual URL of your target page -->
+					<button class="btn-hvr-effects5"><span>View Gallery</span></button>
+				</a>
+			</div>
+
 		</section>
 
 		<section id="services" class="services padding-large darkest dark-overlay"
@@ -206,14 +252,14 @@
 					<div class="col-md-6 mb-4">
 						<div class=" rounded p-4 text-center" style="background-color: #343a40;">
 							<h3 class="h2 font-weight-medium text-white mb-3">Experience</h3>
-							<p class="h3 font-weight-bold text-white">7+ years </p>
+							<p class="h3 font-weight-bold text-white">10+ years </p>
 						</div>
 					</div>
 
 					<div class="col-md-6 mb-4">
 						<div class=" rounded p-4 text-center" style="background-color: #343a40;">
 							<h3 class="h2 font-weight-medium text-white mb-3">Projects</h3>
-							<p class="h3 font-weight-bold text-white">50+ </p>
+							<p class="h3 font-weight-bold text-white">500+ </p>
 						</div>
 					</div>
 
@@ -288,87 +334,7 @@
 		</section>
 
 
-		<section id="gallery" class="gallery-wrap padding-medium">
-			<div class="section-header text-center">
-				<h2 class="section-title text-uppercase pb-4">~ Gallery ~</h2>
-			</div>
-			<div align="center">
-				<button class="btn btn-default filter-button" data-filter="all">All</button>
-				<button class="btn btn-default filter-button" data-filter="Wedding-photography">Wedding
-					Photoshoot</button>
-				<button class="btn btn-default filter-button" data-filter="Baby-Photoshoot">Baby Photoshoot</button>
-				<button class="btn btn-default filter-button" data-filter="Maternity">Maternity</button>
-				<button class="btn btn-default filter-button" data-filter="Prewed-Photoshoot">Pre-wedding
-					Photoshoot</button>
-			</div>
-
-			<div class="gallery-content">
-
-				
-				<div class="content col-md-4  pb-xs-2 Wedding-photography">
-					<figure class="img-wrapper">
-						<a href="hindu.html">
-							<img loading="lazy" class="inner-img" src="\images\gallery\hindu.webp" alt="Wedding Photography" />
-							<div class="hover-text">Hindu wedding</div>
-						</a>
-					</figure>
-				</div><!--content-->
-				<div class="content col-md-4  pb-xs-2 Wedding-photography">
-					<figure class="img-wrapper">
-						<a href="christian.html">
-							<img loading="lazy" class="inner-img" src="\images\gallery\christian.webp" alt="Wedding Photography" />
-							<div class="hover-text">Christian wedding</div>
-						</a>
-					</figure>
-				</div><!--content-->
-				<div class="content col-md-4  pb-xs-2 Prewed-Photoshoot">
-					<figure class="img-wrapper">
-						<a href="prewed.html">
-							<img loading="lazy" class="inner-img" src="\images\gallery\prewed.webp" alt="Wedding Photography" />
-							<div class="hover-text">Pre Wedding</div>
-						</a>
-					</figure>
-				</div><!--content-->
-				<div class="content col-md-4  pb-xs-2 Wedding-photography">
-					<figure class="img-wrapper">
-						<a href="bride.html">
-							<img loading="lazy" class="inner-img" src="\images\gallery\bride.webp" alt="Wedding Photography" />
-							<div class="hover-text">Bride</div>
-						</a>
-					</figure>
-				</div><!--content-->
-				<div class="content col-md-4  pb-xs-2 Maternity">
-					<figure class="img-wrapper">
-						<a href="Maternity.html">
-							<img loading="lazy" class="inner-img" src="\images\gallery\maternity.webp" alt="Maternity Photoshoot" />
-							<div class="hover-text">Maternity</div>
-						</a>
-					</figure>
-				</div><!--content-->
-				<div class="content col-md-4  pb-xs-2 Baby-Photoshoot">
-					<figure class="img-wrapper">
-						<a href="baby.html">
-							<img loading="lazy" class="inner-img" src="\images\gallery\baby.webp" alt="Baby Photoshoot" />
-							<div class="hover-text">Baby Photoshoot</div>
-						</a>
-					</figure>
-				</div><!--content-->
-				<div class="content col-md-4  pb-xs-2 Wedding-photography">
-					<figure class="img-wrapper">
-						<a href="reception.html">
-							<img loading="lazy" class="inner-img" src="\images\gallery\reception.webp" alt="Wedding Photography" />
-							<div class="hover-text">Reception</div>
-						</a>
-					</figure>
-				</div><!--content-->
-			</div><!--gallery-content-->
-			<div class="pix_btn text-center mt-5">
-				<a href="gallery.html"> <!-- Replace "your-target-page.html" with the actual URL of your target page -->
-					<button class="btn-hvr-effects5"><span>View Gallery</span></button>
-				</a>
-			</div>
-
-		</section>
+		
 
 
 		<div class="slider" id="slider3">
