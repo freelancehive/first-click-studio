@@ -6700,9 +6700,13 @@ tfoot {
   position: relative;
 }
 @media screen and (max-width: 575px) {
+  .section-title-test {
+    font-size: 1.3em !important; 
+  }
   h2.section-title {
     font-size: 2em;
   }
+  
 }
 
 /* - Billboard Section
