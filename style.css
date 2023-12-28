@@ -39,6 +39,7 @@ This is main CSS file that contains custom style rules used in this template
 /*--------------------------------------------------------------
 /** 1. Normalize
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 html,
 body {
   position: relative;
@@ -6618,6 +6619,7 @@ tfoot {
   /* display: flex;
   justify-content: center; */
   transition: top 0.3s ease-out;
+  font-family: 'Lato', sans-serif;
 }
 #header.fixed {
   position: fixed;
