@@ -7175,7 +7175,6 @@ body.chocolat-open > .chocolat-image-wrapper {
     opacity: 0;
 }
 */
-/* My Styless */
 #billboard {
   position: relative;
   width: 100%;
@@ -7198,7 +7197,7 @@ body.chocolat-open > .chocolat-image-wrapper {
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 15s slidy infinite;
+  animation: 20s slidy infinite; /* Adjusted animation duration to 20s for 8 images */
 }
 
 @keyframes slidy {
@@ -7208,14 +7207,23 @@ body.chocolat-open > .chocolat-image-wrapper {
   12.5%, 25% {
     left: 0;
   }
-  37.5%, 50% {
-    left: -100%;
+  25%, 37.5% {
+    left: -100%; /* Adjusted to start sliding after 4 images */
   }
-  62.5%, 75% {
+  37.5%, 50% {
     left: -200%;
   }
+  50%, 62.5% {
+    left: -300%; /* Adjusted to start sliding after 6 images */
+  }
+  62.5%, 75% {
+    left: -400%;
+  }
+  75%, 87.5% {
+    left: -500%; /* Adjusted to start sliding after 8 images */
+  }
   87.5%, 100% {
-    left: -300%;
+    left: -600%;
   }
 }
 
@@ -7271,23 +7279,24 @@ body.chocolat-open > .chocolat-image-wrapper {
   transform: scale(1.1);
 }
 .hover-text {
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  padding: 10px 20px;
+  border-radius: 25px ;
+  padding: 10px 10px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  width: 60%;
 }
-
+/* 
 .img-wrapper:hover img {
-  filter: blur(3px);
-}
+  filter: blur(2px);
+} */
 
 .img-wrapper:hover .hover-text {
-  opacity: 1;
+  opacity: 0.8;
 }
 .gallery-content {
   display: grid;
@@ -7310,19 +7319,17 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 
 .hover-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  text-align: center;
+  color: black;
+  background-color: #fff;
   padding: 10px 20px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
-.img-wrapper:hover .hover-text {
+/* .img-wrapper:hover .hover-text {
   opacity: 1;
-}
+} */
 
 .img-wrapper:hover .inner-img {
   transform: scale(1.1); /* Optional: Add a scale effect on hover */
